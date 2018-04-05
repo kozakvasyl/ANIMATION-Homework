@@ -11,7 +11,6 @@ body {
 .wrapper {
 	margin: 0 auto;
 	padding: 0px 40px;
-	gheight: 900px;
 	display:  flex;
 	flex-direction: column;
 }
@@ -31,6 +30,8 @@ h1 {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: flex-start;
+	margin: 0 auto;
+	width: 80%;
 }
 
 .block {
@@ -39,14 +40,13 @@ h1 {
 	align-items: flex-start;
 	flex-direction:column;
 	background: #ffffff;
-	width: 300px;
+	width: 25%;
 	height: 150px;
 	border-radius: 5px;
 	box-shadow: 0px 0px 10px #EAEAEA;
 	margin: 20px;
 	padding: 20px;
 	transition: all 0.2s cubic-bezier(0.46, 0.03, 0.52, 0.96);
-	
 }
 
 .block:hover {
@@ -76,6 +76,43 @@ p {
 	color: #52545e;
 }
 
+@media screen and (max-width: 1280px){
+	 .container {
+	 	width: 100%;
+	 }
+	 .block {
+		width: 30%;
+	}
+	 .wrapper {
+		padding: 0px 10px;
+	}
+}
 
+@media screen and (max-width: 768px){
+	 .container {
+	 	width: 100%;
+	 }
+	.wrapper {
+		padding: 0px 10px;
+	}
+	.block {
+		width: 35%;
+	}
+}
 
-
+@media screen and (max-width: 425px){
+	 .container {
+	 	width: 100%;
+	 }
+	.wrapper {
+		padding: 0px 10px;
+	}
+	.block {
+		width: 100%;
+	}
+	h1 {
+		font-size: 20px;
+		padding: 30px;
+		margin-left: 10px;
+	}
+}
